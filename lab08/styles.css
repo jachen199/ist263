@@ -1,0 +1,58 @@
+body {
+    background-color: #40514E;
+    color: #30E3CA;
+}
+h1, h2,h3 {
+    color: #488FB1;
+}
+h1 {
+    padding-left:10px;
+}
+a {
+    color: #85F4FF;
+}
+nav {
+    background-color: #11999E;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {
+    color: #30E3CA;
+}
+nav a:hover {
+    background-color: #E4F9F5;
+}
+
+.floatright {
+    float:right;
+}
+
+.row {
+    display: flex;
+    padding-left:20px;
+    margin:20px;
+    margin-bottom: 50px;
+    background-color: darkslategray;
+    border-radius: 20px;
+}
+
+.row div {
+    flex: 1;
+}
+
+.address {
+    padding-left:10px;
+}
+
+img {
+    background-color: white;
+    border-radius: .5em;
+}
+
+#form {
+    padding: 30px;
+}
+
+.formbutton {
+    width:170px;
+}
