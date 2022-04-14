@@ -1,0 +1,131 @@
+body {
+    background-color: #40514E;
+    color: #30E3CA;
+}
+h1, h2, h3 {
+    color: #488FB1;
+    padding-left:0.5em;
+}
+a {
+    color: #85F4FF;
+}
+nav {
+    background-color: #11999E;
+    padding: 0.75em;
+    margin-bottom: 4ch;
+}
+nav a {
+    color: #30E3CA;
+}
+nav a:hover {
+    background-color: #E4F9F5;
+}
+
+.floatright {
+    float:right;
+}
+
+.row {
+    display: flex;
+    padding-left:2em;
+    margin:2em;
+    margin-bottom: 5em;
+    background-color: darkslategray;
+    border-radius: 2em;
+}
+
+.row div {
+    flex: 1;
+}
+
+.address {
+    padding-left:1em;
+}
+
+img {
+    background-color: white;
+    border-radius: .5em;
+}
+
+#form {
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+.formbutton {
+    width:10em;
+}
+
+/* Tables */
+
+tr {
+    background-color: gray;
+}
+.evenrow {
+    background-color: darkgray;
+}
+
+.centeredtext {
+    text-align:center;
+}
+
+
+.skillsrow {
+    padding-top:3em;
+    display: flex;
+    justify-content: space-between;
+    flex: 4;  
+    width:90%;
+    margin: 0 auto;
+}
+
+.skills {
+    display: flex;
+    flex:75%;
+    justify-content: space-around;
+    padding:2em 4em 1em 4em;
+}
+
+.skills img {
+    width: 3em;
+    height: 3em;
+}
+
+.skillsother {
+    background-color:lightcyan;
+    border-radius: 2em;
+    padding:1.5em;
+    flex: 25%;
+}
+
+.skillspara {
+    margin-left:3em; 
+}
+
+.indeximage {
+    max-width:100%;
+}
+
+
+#skip {
+    position:absolute;
+    left: -999em;
+    padding:0.5em;
+}
+
+#skip:focus {
+    left: 1em;
+    top: 3em;
+
+}
+
+@media only screen and (max-width:600px) {
+    nav a {
+        display: block;
+        padding: 1em;
+        border-bottom: 1px lightgray solid;
+    }
+    nav span {
+        display: none;
+    }
+}
