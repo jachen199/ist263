@@ -10,12 +10,12 @@ a {
     color: #85F4FF;
 }
 nav {
-    background-color: #11999E;
+    background-color: #0f868a;
     padding: 0.75em;
     margin-bottom: 4ch;
 }
 nav a {
-    color: #30E3CA;
+    color: white;
 }
 nav a:hover {
     background-color: #E4F9F5;
