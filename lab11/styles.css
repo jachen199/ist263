@@ -3,7 +3,7 @@ body {
     color: #30E3CA;
 }
 h1, h2, h3 {
-    color: #488FB1;
+    color: #6ea9c4;
     padding-left:0.5em;
 }
 a {
@@ -15,7 +15,10 @@ nav {
     margin-bottom: 4ch;
 }
 nav a {
-    color: white;
+    color: black;
+}
+nav span {
+    color: black;
 }
 nav a:hover {
     background-color: #E4F9F5;
@@ -116,6 +119,7 @@ tr {
 #skip:focus {
     left: 1em;
     top: 3em;
+    background-color: #0f868a;
 
 }
 
