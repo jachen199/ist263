@@ -100,6 +100,13 @@ tr {
     padding:1.5em;
     flex: 25%;
 }
+.skillsother aside div {
+    color: black;
+}
+
+.skillsother h2 {
+    color: black;
+}
 
 .skillspara {
     margin-left:3em; 
