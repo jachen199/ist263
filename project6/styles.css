@@ -11,9 +11,6 @@ nav div {
     background-image: url("images/centralpark.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-        
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
 
     width: 80%;
     margin: 0 auto;
@@ -25,17 +22,77 @@ nav div {
     width: 30%;
     margin: 0 auto;
     text-align: center;
-    z-index: 2;
 }
 
 #headerindex div {
     width: 40%;
     margin: 0 auto;
     margin-top: 3em;
-    z-index: 2;
+    background-color: white;
+}
+.centertext {
+    text-align:center;
+    padding-top:3em;
 }
 
-img {
-    width:750px;
-    height:360px;
+/* img {
+    max-width:750px;
+    max-height:360px;
+} */
+
+section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.articlerow {
+    display: flex;
+}
+
+.articlebox {
+    flex: 1;
+}
+
+.articlebox img, .articlebox iframe {
+    width: 90%;
+    max-height: 480px;
+    display: block;
+    margin: 0 auto;
+}
+
+.articleaddress, .articletext {
+    padding-top: 2em;
+    display:block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.articletext {
+    width: 80%;
+}
+
+footer {
+    padding-top: 5em;
+    padding-left: 12%;
+    display: flex;
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer div {
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+footer img {
+    width: 50%;
+}
+
+footer span {
+    display: block;
 }
