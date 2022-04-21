@@ -12,6 +12,10 @@ nav div {
     background-repeat: no-repeat;
     background-size: cover;
 
+    /* Add the blur effect */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+
     width: 80%;
     margin: 0 auto;
     height: 40em;
@@ -28,17 +32,13 @@ nav div {
     width: 40%;
     margin: 0 auto;
     margin-top: 3em;
-    background-color: white;
+    font-weight: bold;
+    background-color: rgba(200,200,200, 0.6); 
 }
 .centertext {
     text-align:center;
     padding-top:3em;
 }
-
-/* img {
-    max-width:750px;
-    max-height:360px;
-} */
 
 section {
     width: 90%;
