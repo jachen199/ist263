@@ -1,10 +1,28 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Nav */
 nav {
     display:flex;
     justify-content: space-between;
     padding-top:0.3em;
+    border-bottom: black solid 1px;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
 }
 nav div {
-    padding: 0em 0.1em 2em 0.1em;
+    padding: 0em 0.1em 0.1em 0.1em;
+}
+
+nav .navtitle {
+    font-style: italic;
+}
+
+/* Header  */
+
+#mainimage {
+    display:none;
 }
 
 #headerindex {
@@ -12,20 +30,20 @@ nav div {
     background-repeat: no-repeat;
     background-size: cover;
 
-    /* Add the blur effect */
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
-
     width: 80%;
     margin: 0 auto;
     height: 40em;
 }
 
 #headerindex h1 {
-    padding-top:5em;
+    padding-top: 5em;
     width: 30%;
     margin: 0 auto;
     text-align: center;
+}
+
+#headerindex h1 span {
+    background-color: rgba(200,200,200, 0.75); 
 }
 
 #headerindex div {
@@ -33,12 +51,15 @@ nav div {
     margin: 0 auto;
     margin-top: 3em;
     font-weight: bold;
-    background-color: rgba(200,200,200, 0.6); 
+    background-color: rgba(200,200,200, 0.75); 
 }
+
 .centertext {
     text-align:center;
     padding-top:3em;
 }
+
+/* Main content area */
 
 section {
     width: 90%;
@@ -75,9 +96,9 @@ section h2 {
     width: 80%;
 }
 
+/* Footer */
 footer {
     padding-top: 5em;
-    padding-left: 12%;
     display: flex;
     /* border: 1px solid black; */
     width: 50%;
@@ -86,6 +107,7 @@ footer {
 
 footer div {
     flex: 1;
+    text-align: center;
     /* border: 1px solid red; */
 }
 
@@ -100,4 +122,73 @@ footer span {
 hr {
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+@media only screen and (max-width:600px) {
+    
+    #mainimage {
+        display:block;
+        max-width: 100%;
+    }
+
+    
+    #headerindex {
+        background-image: none;
+        
+        width: 90%;
+        margin: 0 auto;
+        height: 35em;
+    }
+
+    #headerindex h1 {
+        padding-top: 1em;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #headerindex h1 span {
+        background-color: white; 
+    }
+    
+    #headerindex div {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-weight: bold;
+        background-color: white; 
+    }
+    
+    .centertext {
+        padding: 2em 0.2em 0em 0.2em;
+    }
+
+    /* Main content area */
+    section {
+        width: 95%;
+    }
+    
+    .articlerow {
+        display: block;
+    }
+    
+    .articlebox {
+        padding: 1em;
+    }
+    
+    /* Footer */
+    footer {
+        padding-top: 2em;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    footer img {
+        width: 80%;
+    }
+    
+    hr {
+        margin: 1em 0.2em 1em 0.2em;
+    }
 }
