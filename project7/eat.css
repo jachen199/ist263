@@ -1,0 +1,164 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Nav */
+nav {
+    display:flex;
+    justify-content: space-between;
+    padding-top:0.3em;
+    border-bottom: black solid 1px;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+nav div {
+    padding: 0em 0.1em 0.1em 0.1em;
+}
+
+nav .navtitle {
+    font-style: italic;
+}
+
+/* Header */
+#mainimage {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    padding-top: 2em;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header div {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 1em; 
+
+}
+
+/* Main Content */
+
+/* IMG left, TEXT right */
+.section1 {
+    display: grid;
+    grid-template-columns: 10fr 45fr 30fr 15fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.2em;
+}
+
+.leftdiv1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: left;
+}
+.rightdiv1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-top: 2em;
+}
+.bottomdiv {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end:4;
+    width: 100%;
+    height: 100%;
+}
+
+section img {
+    max-width: 600px;
+    max-height: 360px;
+}
+
+/* IMG right, TEXT left */
+.section2 {
+    display: grid;
+    grid-template-columns: 10fr 30fr 45fr 15fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.2em;
+}
+
+.leftdiv2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 2em;
+}
+
+.rightdiv2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: right;
+}
+
+.sidebar {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-top: 20%;
+}
+
+.sidebar > div {
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+.sidebar img {
+
+    width: 90%;
+}
+
+/* Footer */
+footer {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    display: flex;
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer div {
+    flex: 1;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+footer img {
+    width: 50%;
+}
+
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 80%;
+}
+@media only screen and (max-width:800px) { 
+    .sidebar {
+        display: none;
+    }
+    /* Footer */
+    footer {
+        padding-top: 2em;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    footer img {
+        width: 80%;
+    }
+    
+    hr {
+        margin: 1em 0.2em 1em 0.2em;
+    }
+
+}
