@@ -92,6 +92,10 @@ section h2 {
     margin: 0 auto;
 }
 
+.articleaddress {
+    font-style: italic;
+}
+
 .articletext {
     width: 80%;
 }
