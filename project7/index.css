@@ -10,7 +10,9 @@ nav {
     border-bottom: black solid 1px;
     margin-bottom: 2em;
     flex-wrap: wrap;
+    font-size: 17px;
 }
+
 nav div {
     padding: 0em 0.1em 0.1em 0.1em;
 }
@@ -19,6 +21,15 @@ nav .navtitle {
     font-style: italic;
 }
 
+nav a {
+    border-radius: 10px; 
+    background-color:rgba(220,220,220, 0.75);
+    padding: 3px;
+}
+
+nav a:hover {
+    background-color: lightskyblue;
+}
 /* Header  */
 
 #mainimage {
